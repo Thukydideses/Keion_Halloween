@@ -55,6 +55,9 @@ h1{
     margin: 0;
     padding: 10px 0;
 }
+.band{
+    font-size: clamp(0px,4vw,13px);
+}
 
 /*タブアニメ*/
 .tab_class:hovor{
