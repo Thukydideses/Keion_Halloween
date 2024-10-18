@@ -71,7 +71,7 @@ input[name="tab_name"]{
 /*歌詞本文*/
 pre{
     padding: 1.0rem 2.0rem;
-    font-size: clamp(0px,calc(100vw / 30),1.7rem);
+    font-size: clamp(0px,calc(100vw / 25),1.7rem);
     color:#dadfe8;
     background-color:#0a1228;
 }
