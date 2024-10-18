@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+/* 共通部分
+------------------------------------------------------------*/
+html{
+    font-size: 100%;
+}
+body{
+    font-family: "Hiragino Kakku Gothic ProN", "Hiragino Sans", "BIZ UDPGothic", sans-serif;
+    line-height: 1.7;
+    color: rgb(0, 0, 0);
+    margin: 0;
+}
+a{
+    text-decoration: none
+}
+img{
+    max-width: 100%
+}
+
+
+/*タイトル
+---------------------------------------------------------------*/
+h1{
+    margin: 0;
+    padding-top: calc(60px - clamp(0px,8vw,30px));
+    padding-bottom: 0;
+    padding-right: 1.0rem;
+    padding-left: 1.0rem;
+    height:120px;
+    font-size: clamp(0px,8vw,30px);
+    color: white;
+    background-color: black;
+    background-image: url(images/halloween.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center
+}
+
+
+/* menu
+-----------------------------------------------------------*/
+/*タブ*/
+.tab_class{
+    width: calc(100%/3);
+    height: 50px;
+    line-height:23px;
+    font-size: clamp(0px,5vw,16px);
+    text-align:center;
+    display: block;
+    float: left;
+    transition: all 0.2s ease;
+    background: #373e5a;
+    color: #dadfe8;
+    margin: 0;
+    padding: 10px 0;
+}
+
+/*タブアニメ*/
+.tab_class:hovor{
+    opacity: 0.75;
+}
+input[name="tab_name"]{
+    display: none;
+}
+
+
+
+/*歌詞
+---------------------------------------------------------*/
+/*歌詞本文*/
+pre{
+    padding: 1.0rem 2.0rem;
+    font-size: clamp(0px,calc(100vw / 30),1.0rem);
+    color:#dadfe8;
+    background-color:#0a1228;
+}
+
+.data{
+    text-align: right;
+    font-size: clamp(0px,calc(100wvw / 33),0.7rem);
+}
+
+/*歌詞アニメ*/
+.content_class{
+    display: none;
+    padding-right:clamp(calc(100vw - 430px),30px,100%);
+    clear: both;
+    overflow: hidden;
+}
+
+.area input:checked + .tab_class{
+    color: #dadfe8;
+    background-color:#0a1228
+}
+
+#tab1:checked ~ #content1_class,
+#tab2:checked ~ #content2_class,
+#tab3:checked ~ #content3_class{
+    display: block;
+}
