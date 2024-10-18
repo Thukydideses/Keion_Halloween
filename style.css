@@ -84,7 +84,7 @@ pre{
 /*歌詞アニメ*/
 .content_class{
     display: none;
-    padding-right:clamp(calc(100vw - 430px),30px,100%);
+    padding-right:clamp(calc((100vw - 430px)/1.5),30px,100%);
     clear: both;
     overflow: hidden;
 }
