@@ -42,7 +42,7 @@ h1{
 -----------------------------------------------------------*/
 /*タブ*/
 .tab_class{
-    width: calc(100%/3);
+    width: calc(calc(100% - 0.4rem) / 3);
     height: 50px;
     line-height:23px;
     font-size: clamp(0px,5vw,16px);
@@ -57,6 +57,21 @@ h1{
 }
 .band{
     font-size: clamp(0px,4vw,13px);
+}
+.tab1{
+    border-width: 0 0.1rem 0 0;
+    border-style: solid;
+    border-color: white;
+}
+.tab2{
+    border-width: 0 0.1rem 0 0.1rem;
+    border-style: solid;
+    border-color: white;
+}
+.tab3{
+    border-width: 0 0 0 0.1rem;
+    border-style: solid;
+    border-color: white;
 }
 
 /*タブアニメ*/
