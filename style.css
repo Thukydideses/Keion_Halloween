@@ -92,10 +92,8 @@ pre{
     font-size: clamp(0px,calc(100vw / 25),1.7rem);
     color:#dadfe8;
     background-color:#0a1228;
-}
-
-pre {
-white-space: pre-wrap;
+    white-space: pre-wrap;
+    word-break:break-all;
 }
 
 /*歌詞アニメ*/
