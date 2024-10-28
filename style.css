@@ -94,6 +94,10 @@ pre{
     background-color:#0a1228;
 }
 
+pre {
+white-space: pre-wrap;
+}
+
 /*歌詞アニメ*/
 .content_class{
     display: none;
